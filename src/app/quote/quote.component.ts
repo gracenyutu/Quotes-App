@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ThisReceiver } from '@angular/compiler';
+import { Component, OnInit, Input } from '@angular/core';
 import { Quotes } from '../quotes';
 
 @Component({
@@ -19,9 +20,17 @@ export class QuoteComponent implements OnInit {
     new Quotes(8,'Integrity reveals beauty', 'Thomas Leonard'),
   ];
 
+  toggleDetails(index: number){
+    this.quotes[index].vote +=1;
+  }
+  voteQuote(quoteUp: any, index: any){
+    if (quoteUp) {
+      this.quotes.splice(index,1)
+    }
+  }
   constructor() { }
 
-  ngOnInit(): {
-  }
+  ngOnInit() {
+}
 
 }

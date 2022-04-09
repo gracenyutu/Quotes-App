@@ -1,9 +1,7 @@
 export class Quotes {
-  upVote: number;
-  downVote: number;
+  vote: number;
   constructor(public id: number,public content: string,public author: string)
   {
-    this.upVote=0;
-    this.downVote=0;
+    this.vote=0;
   }
 }

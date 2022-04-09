@@ -1,11 +1,9 @@
 <div>
   <h1>Quotes</h1>
   <hr>
-  <div *ngFor="let quotes of Quotes;let i = index">
-      <li>{{quotes.content}}</li>
-      <button (click)="toggleDetails(i)">Upvote</button>
-      <button (click)="toggleDetails(i)">Upvote</button>
-      <app-quote-detail [quotes]="quotes"></app-quote-detail>
-    </li>
+  <div *ngFor="let quote of quotes;let i = index">
+      <p>{{quote.content}}</p>
+      <button (click)="toggleDetails(i)">Vote</button>
+      <app-quote-detail *ngIf="quote.vote" [quotes]='quote' (quoteUp)="voteQuote($event,i)"></app-quote-detail>
   </div>
 </div>

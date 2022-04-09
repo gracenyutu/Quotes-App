@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
-import { GoalFormComponent } from './goal-form/goal-form.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 @NgModule({
@@ -13,7 +12,6 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     AppComponent,
     QuoteComponent,
     QuoteDetailComponent,
-    GoalFormComponent,
     QuoteFormComponent
   ],
   imports: [
