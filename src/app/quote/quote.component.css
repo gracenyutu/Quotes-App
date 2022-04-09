@@ -1,0 +1,20 @@
+#author {
+  color: black;
+  font-family: 'Sofia', cursive;
+}
+#quote {
+  background-color: #ff57bb;
+}
+#content {
+  color: black;
+}
+.sidenav2 {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}

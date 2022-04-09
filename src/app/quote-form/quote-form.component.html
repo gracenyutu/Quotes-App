@@ -1,6 +1,6 @@
 <div class="card border-primary mb-3">
   <div class="card-header">Write a new Quote</div>
-  <form>
+  <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
       <div class="form-group">
 
           <label for="name">Name</label>
@@ -21,7 +21,7 @@
       <div class="form-group">
         <label for="author">Date</label>
         <input type='date' id="date" required>
-
-    </div>
+      </div>
+      <button type="submit" class="btn btn-success">Add Quote</button>
   </form>
 </div>

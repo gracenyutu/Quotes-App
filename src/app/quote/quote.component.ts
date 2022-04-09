@@ -11,7 +11,7 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quotes[] = [
     new Quotes(1,'When something is important enough, you do it even if the odds are not in your favor','Elon Musk'),
-    new Quotes(2,'Its good to learn from mistakes, not just your own', 'Elon Musk'),
+    new Quotes(2,'Its good to learn from mistakes, not just your own', 'Samson Opondo'),
     new Quotes(3,'He who has a why to live can bear almost any how', 'Fredrich Nietzsche'),
     new Quotes(4,'Do not take life too seriously. You will never get out of it alive','Elbert Hubbard'),
     new Quotes(5,'Life is what happens while you are busy making other plans', 'John Lennon'),
@@ -27,6 +27,12 @@ export class QuoteComponent implements OnInit {
     if (quoteUp) {
       this.quotes.splice(index,1)
     }
+  }
+  addNewQuote(quote: any){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.submitDate = new Date(quote.submitDate)
+    this.quotes.push(quote)
   }
   constructor() { }
 
