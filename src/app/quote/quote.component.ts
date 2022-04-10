@@ -20,15 +20,12 @@ export class QuoteComponent implements OnInit {
     new Quotes(8,'Integrity reveals beauty', 'Thomas Leonard',0,0,new Date(2020,1,9)),
   ];
 
-  voteQuote(quoteUp: any, index: number){
-    if (quoteUp) {
-      this.quotes.splice(index,1)
-    }
-  }
+
+
   addNewQuote(quote: any){
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
-    quote.submitDate = new Date(quote.submitDate)
+    quote.createDate = new Date(quote.createDate)
     this.quotes.push(quote)
   }
   constructor() { }

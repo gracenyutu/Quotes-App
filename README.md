@@ -1,6 +1,14 @@
-# Quotes
+# {Quotes}
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
+#### {An application for inspiring quotes}, {2022}
+
+#### By **{Grace Nyutu}**
+
+## Description
+
+{This is an angular application that shows quotes, allows users to create new quotes, shows how long a quote has stayed since creation, and allows for voting for the quotes both for and against the quote. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4. }
+
+## Setup/Installation Requirements
 
 ## Development server
 
@@ -22,6 +30,15 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Technologies Used
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+{Angular Js, Typescript, HTML, CSS}
+
+## Support and contact details
+
+{Incase of any issues with the app, contact us on salis@gmail.com}
+
+### License
+
+_{MIT License}_
+Copyright (c) {2022} **{Grace Nyutu}**
