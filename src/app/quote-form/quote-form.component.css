@@ -1,6 +1,7 @@
 form {
   font-size: 18px;
   background-color: #fff4e4;
+  padding-top: 6px;
 }
 
 .card-header {
@@ -8,4 +9,9 @@ form {
   text-align: center;
   font-size: 25px;
 
+}
+#submit {
+  background-color: aqua;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }

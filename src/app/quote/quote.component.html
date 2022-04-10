@@ -1,14 +1,48 @@
 <div>
-  <h1>Quotes</h1>
+  <h1 apphighlight>Inspiring Quotes</h1>
   <hr>
       <div *ngFor="let quote of quotes;let i = index">
-        <div id="quote" class="card text-white text-center p-3">
-          <blockquote>
-            <p id="content">{{quote.content}}</p>
-            <footer class="blockquote-footer">
-              <cite id="author">{{quote.author}}</cite>
-            </footer>
-          </blockquote>
+        <div class="row">
+          <div class="col-md-3">
+            <div id="quote" class="card text-white text-center">
+              <blockquote>
+                <p id="content">{{quote.content}}</p>
+                <footer class="blockquote-footer">
+                  <cite id="author">{{quote.author}}</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="quote" class="card text-white text-center">
+              <blockquote>
+                <p id="content">{{quote.content}}</p>
+                <footer class="blockquote-footer">
+                  <cite id="author">{{quote.author}}</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="quote" class="card text-white text-center">
+              <blockquote>
+                <p id="content">{{quote.content}}</p>
+                <footer class="blockquote-footer">
+                  <cite id="author">{{quote.author}}</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="quote" class="card text-white text-center">
+              <blockquote>
+                <p id="content">{{quote.content}}</p>
+                <footer class="blockquote-footer">
+                  <cite id="author">{{quote.author}}</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
         </div>
         <button (click)="toggleDetails(i)">Vote</button>
         <app-quote-detail *ngIf="quote.vote" [quotes]='quote' (quoteUp)="voteQuote($event,i)"></app-quote-detail>
