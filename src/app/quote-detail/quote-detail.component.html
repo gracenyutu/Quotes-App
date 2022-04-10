@@ -1,3 +1,4 @@
 <p>{{quotes.author}}</p>
-<button (click)="quoteVote(true)">Upvote</button>
-<button (click)="quoteVote(false)">Downvote</button>
+<button (click)="quoteVote()">{{quotes.upvote}}</button>
+<button (click)="quoteVote()">{{quotes.downvote}}</button>
+<p>This quote was created {{quotes.createDate|dateCount}}</p>

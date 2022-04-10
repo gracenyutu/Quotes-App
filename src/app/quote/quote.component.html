@@ -7,6 +7,7 @@
             <div id="quote" class="card text-white text-center">
               <blockquote>
                 <p id="content">{{quote.content}}</p>
+                <p>{{quote.createDate|date}}</p>
                 <footer class="blockquote-footer">
                   <cite id="author">{{quote.author}}</cite>
                 </footer>
@@ -41,11 +42,14 @@
                   <cite id="author">{{quote.author}}</cite>
                 </footer>
               </blockquote>
+              <div id="votes button_div">
+                <input type="button" value="up">{{quote.upvote}}
+                <input type="button" value="down">{{quote.downvote}}
+              </div>
             </div>
           </div>
         </div>
-        <button (click)="toggleDetails(i)">Vote</button>
-        <app-quote-detail *ngIf="quote.vote" [quotes]='quote' (quoteUp)="voteQuote($event,i)"></app-quote-detail>
+
     </div>
     <div class="sidenav2">
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
