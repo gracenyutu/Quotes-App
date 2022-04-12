@@ -9,6 +9,8 @@ import { Quotes } from '../quotes';
 })
 export class QuoteComponent implements OnInit {
 
+  
+
   quotes:Quotes[] = [
     new Quotes(1,'When something is important enough, you do it even if the odds are not in your favor','Elon Musk',0,0,new Date(2020,9,9)),
     new Quotes(2,'Its good to learn from mistakes, not just your own', 'Samson Opondo',0,0,new Date(2020,2,17)),
